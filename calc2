@@ -1,0 +1,14 @@
+a=6
+b=9
+def sum(a,b):
+    return(a+b)
+def pumpkinsky(a,b):
+    return(a-b)
+#int(input('choose a function (+,-,*,/): '))
+input= '-'
+if input == '+':
+    print(F'the sum of {a} and {b} equals {sum (a,b)}')
+elif input == '-':
+    print(F' {a} minus {b} equals {pumpkinsky (a,b)}')
+else:
+    print("h")
