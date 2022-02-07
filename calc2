@@ -1,14 +1,23 @@
-a=6
-b=9
+a = input('Enter value for a')
+a = float(a)
+function = input('type a function (+,-,*,/)')
+b = input('Enter value for b')
+b = float(b)
+
 def sum(a,b):
     return(a+b)
-def pumpkinsky(a,b):
+def minus(a,b):
     return(a-b)
-#int(input('choose a function (+,-,*,/): '))
-input= '-'
-if input == '+':
+def product(a,b):
+    return(a*b)
+def quotient(a,b):
+    return(a/b)
+
+if function == '+':
     print(F'the sum of {a} and {b} equals {sum (a,b)}')
-elif input == '-':
-    print(F' {a} minus {b} equals {pumpkinsky (a,b)}')
-else:
-    print("h")
+elif function == '-':
+    print(F' {a} minus {b} equals {minus(a,b)}')
+elif function == '*':
+    print(F'{a} times {b} equals {product(a,b)}')
+elif function == '/':
+    print(F'{a} divided {b} equals {quotient(a,b)}')
