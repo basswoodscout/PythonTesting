@@ -1,9 +1,8 @@
 a = input('Enter value for a')
 a = float(a)
-function = input('type a function (+,-,*,/)')
+function = input('type a function (+,-,*,/,^)')
 b = input('Enter value for b')
 b = float(b)
-
 def sum(a,b):
     return(a+b)
 def minus(a,b):
@@ -12,7 +11,8 @@ def product(a,b):
     return(a*b)
 def quotient(a,b):
     return(a/b)
-
+def power(a,b):
+    return pow(a,b)
 if function == '+':
     print(F'the sum of {a} and {b} equals {sum (a,b)}')
 elif function == '-':
@@ -20,4 +20,6 @@ elif function == '-':
 elif function == '*':
     print(F'{a} times {b} equals {product(a,b)}')
 elif function == '/':
-    print(F'{a} divided {b} equals {quotient(a,b)}')
+    print(F'{a} divided divided by {b} equals {quotient(a,b)}')
+elif function == '^':
+    print(F'{a} to the power of {b} equals {power(a,b)}')
